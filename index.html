@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+  <link rel="stylesheet" href="style.css">
+  <header>
+    <h1 style="flex: 3mm; border: 3mm;">Response Form : </h1>
+  </header>
+  <fieldset>
+    <legend>Details : </legend>
+
+
+    <form action="page2.html" name="myForm" onsubmit="return GoNext()" method="post" required>
+
+      <label for="username">Name:</label>
+      <input type="text" id="username" name="username" required />
+      <p>Email : <input type="email" name="email" id="email" required /></p>
+
+      <p>Phone number: <input type="text" name="phone" id="number" placeholder="(XXX) - XXX -  XXXX"
+          onkeyup="validation()" required />
+
+        <label style="color: blue; font-weight: bolder; visibility: hidden" id="signal_1" for="number">Valid..!!</label>
+
+        <label style="color: blue; font-weight: bolder; visibility: hidden" id="signal_2" for="number">
+          Invalid..!!</label>
+
+        <label style="visibility: hidden" id="jio" for="Jio">jio number</label>
+      </p>
+
+      <input type="submit" value="submit" onclick="GoNext() " />
+
+    </form>
+  </fieldset>
+  <!-- <input type="submit" onclick="GoNext()" /> -->
+  <a href="page2.html"></a>
+  <script src="index.js"></script>
+</body>
+
+</html>

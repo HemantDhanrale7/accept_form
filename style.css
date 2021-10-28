@@ -1,0 +1,13 @@
+h1 {
+  /* display: flexbox; */
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  height: 65px;
+  /* background-color: cornflowerblue; */
+  color: cadetblue;
+}
+
+fieldset {
+  background-color: cyan;
+}
